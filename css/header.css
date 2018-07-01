@@ -1,0 +1,11 @@
+header {
+  color: white;
+  background: linear-gradient(to bottom right, #25007E, #FA0003); }
+  header .button {
+    border: solid 1px white;
+    text-align: center;
+    background: linear-gradient(to bottom right, #25007E, #FA0003);
+    border-radius: 45px;
+    font-size: 24px; }
+  header h4 {
+    font-weight: 100; }

@@ -1,0 +1,22 @@
+@import 'zmienne';
+
+#contact{
+    background: $gray;
+    button{
+        color: white;
+    }
+    button:hover{
+        background: $hover-gradient;
+    }
+    input{
+        border: none;
+        border-bottom: solid 1px $blue;
+        background: transparent;
+        font-size: 14px;
+    }
+    iframe{
+        width: 50vw;
+        height: 30vh;
+        
+    }
+}

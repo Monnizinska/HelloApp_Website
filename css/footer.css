@@ -1,0 +1,27 @@
+footer {
+  background-color: #11131b;
+  color: white; }
+  footer h5 {
+    font-size: 12px; }
+  footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px; }
+  footer .up {
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(to bottom right, #25007E, #FA0003);
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center; }
+    footer .up .arrow {
+      height: 15px;
+      width: 15px;
+      border-top: solid 4px #11131b;
+      border-left: solid 4px #11131b;
+      transform: rotate(45deg); }

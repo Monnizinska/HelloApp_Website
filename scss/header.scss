@@ -1,0 +1,15 @@
+@import 'zmienne';
+header {
+    color: white;
+    background: $gradient;
+    .button {
+        border: solid 1px white;
+        text-align: center;
+        background: $gradient;
+        border-radius: 45px;
+        font-size: 24px;
+    }
+    h4 {
+        font-weight: 100;
+    }
+}

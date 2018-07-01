@@ -1,0 +1,23 @@
+#team .team-member {
+  text-transform: uppercase;
+  border: solid 3px #25007E;
+  margin-left: 1%;
+  width: 50vw;
+  display: block; }
+  @media screen and (min-width: 768px) {
+    #team .team-member {
+      width: 32%; } }
+  #team .team-member .photo {
+    background-color: #f5f5f5;
+    border-radius: 100%; }
+  #team .team-member i {
+    margin-left: 0.5vw; }
+  #team .team-member .fab {
+    background: linear-gradient(to bottom right, #25007E, #FA0003); }
+  #team .team-member .team-icon {
+    color: white;
+    border-radius: 50px;
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+    line-height: 32px; }

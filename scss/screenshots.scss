@@ -1,0 +1,85 @@
+@import 'zmienne';
+#screenshots {
+    .mySlides {
+        display: none;
+        overflow-x: visible;
+        position: relative;
+        width: 100vw;
+
+        .img{
+            margin-top: 2vw;
+            height: 448px;
+            width: 250px;
+            background: transparent;
+            border: 4px solid transparent;
+            -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $red 100%);
+            -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $red 100%);
+            border-image: linear-gradient(to bottom right, $blue 0%, $red 100%);
+            border-image-slice: 1;
+            color: $blue;
+            font-size: 48px;
+            padding-top: 180px;
+        }
+    }
+    .slideshow-container {
+        width: 100%;
+        position: relative;
+    }
+    .prev,
+    .next {
+        display: block;
+        z-index: 10;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -90px;
+        color: #11131b;
+        font-weight: bold;
+        font-size: 36px;
+        transition: 0.6s ease;
+        border-radius: 0 10px 10px 0;
+    }
+    .next {
+        right: 0;
+        border-radius: 10px 0 0 10px;
+    }
+    .prev {
+        left: 0;
+    }
+    .prev:hover,
+    .next:hover {
+        background-color: rgba($blue, 0.5);
+        color: white;
+    }
+    .dot-box {
+        width: 100vw;
+        justify-content: center;
+        padding-bottom: 6vh;
+        
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 4vw;
+        background-color: rgba($color: $blue, $alpha: 0.5);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        @media screen and(min-width: 768px) {
+            margin: 2vw;
+            margin-top: 4vw;
+        }
+        @media screen and(min-width: 992px) {
+            margin: 1.2vw;
+            margin-top: 4vw;
+        }
+    }
+    .active,
+    .dot:hover {
+        background-color: $red;
+    } 
+
+}

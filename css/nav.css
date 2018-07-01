@@ -1,0 +1,18 @@
+#main-nav #logo {
+  height: 50px; }
+
+#main-nav .navbar-collapse ul li {
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  border-bottom: solid 1px transparent;
+  padding-top: 20px; }
+
+#main-nav .navbar-collapse ul .b-bottom:hover {
+  border-bottom: solid 1px white; }
+
+#main-nav .navbar-collapse ul .button:hover {
+  border-bottom: solid 1px transparent; }
+
+@media screen and (min-width: 768px) {
+  #main-nav ul li {
+    padding-top: 0px; } }

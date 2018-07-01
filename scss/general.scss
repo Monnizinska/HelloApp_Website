@@ -1,0 +1,180 @@
+@import 'zmienne';
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+        ::selection {
+            background: #ffb7b7; /* WebKit/Blink Browsers */
+          }
+          ::-moz-selection {
+            background: #ffb7b7; /* Gecko Browsers */
+          }
+        section,
+        header {
+            height: auto;
+        }
+        #app-features,
+        #screenshots, {
+            background-color: $gray;
+        
+        }
+        #gradient{
+            .icon-white-border{
+                @include icon;
+            }
+        }
+        h1 {
+            letter-spacing: 1px;
+            font-size: 8vw;
+            line-height: 10vw;
+            @media screen and(min-width: 500px) {
+                font-size: 32px;
+                line-height: 7vw;
+            }
+            @media screen and(min-width: 768px) {
+                font-size: 5vw;
+                line-height: 7vw;
+            }
+            @media screen and(min-width: 992px) {
+                font-size: 3.6vw;
+                line-height: 5.5vw;
+            }
+            @media screen and(min-width: 1200px) {
+                font-size: 3vw;
+                line-height: 4.4vw;
+            }
+        }
+        h2 {
+            letter-spacing: 1px;
+            font-size: 48px;
+            @media screen and(min-width: 768px) {
+                font-size: 2.5vw;
+                line-height: 60px;
+            }
+            @media screen and(min-width: 992px) {
+                font-size: 48px;
+                line-height: 60px;
+            }
+        }
+
+
+        h4 {
+            letter-spacing: 0.95px;
+            font-size: 4.6vw;
+            line-height: 6.5vw;
+            @media screen and(min-width: 500px) {
+                font-size: 18px;
+                line-height: 32px;
+            }
+            @media screen and(min-width: 768px) {
+                font-size: 2vw;
+                line-height: 3.8vw;
+            }
+            @media screen and(min-width: 992px) {
+                font-size: 1.8vw;
+                line-height: 3.2vw;
+            }
+            @media screen and(min-width: 1200px) {
+                font-size: 1.4vw;
+                line-height: 2.6vw;
+            }
+        }
+
+        .phone {
+            width: 250px;
+            @media screen and(min-width: 768px) {
+                width: 30vw;
+            }
+            @media screen and(min-width: 992px) {
+                width: 22vw;
+                min-width: 300px;
+                max-width: 400px;
+            }  
+        }
+        .button:hover {
+            background: $hover-gradient;
+        }
+        .icon,
+        .icon-border {
+            @include icon;
+        }
+        .icon {
+            background: $gradient;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+        .icon-border {
+            background: transparent;
+            border: 4px solid transparent;
+            -moz-border-image: -moz-linear-gradient(top left, $blue 0%, $red 100%);
+            -webkit-border-image: -webkit-linear-gradient(top left, $blue 0%, $red 100%);
+            border-image: linear-gradient(to bottom right, $blue 0%, $red 100%);
+            border-image-slice: 1;
+            color: $blue;
+        }
+        .gradient-bcg,#download {
+            background: $gradient;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            @media screen and(min-width: 768px) {
+                height: auto;
+            }
+            .icon-white-border {
+                border: solid 1px white;
+                border-radius: 20px;
+            }
+        }
+        .team-member,
+        .post {
+            height: 320px;
+            border-radius: 20px;
+        }
+        .blog-content,
+        .photo {
+            height: 150px;
+            width: 150px;
+        }
+        button {
+            border: solid 1px white;
+            background: $gradient;
+            border-radius: 45px;
+            font-size: 24px;
+        }
+        #main-nav {
+            color: white;
+            .button {
+                background-color: white;
+                color: $blue;
+                border-radius: 25px;
+            }
+            a {
+                color: white;
+                text-transform: capitalize;
+            }
+        }
+        #about{
+            height: auto;
+            .phone{
+                width: 50vw;
+                max-width: 400px;
+                margin-left: -10vw;
+            }
+        }
+    }
+}
+
+@import 'nav';
+@import 'header';
+@import 'screenshots';
+@import 'team';
+@import 'contact';
+@import 'footer';

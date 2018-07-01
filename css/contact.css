@@ -1,0 +1,14 @@
+#contact {
+  background: #f5f5f5; }
+  #contact button {
+    color: white; }
+  #contact button:hover {
+    background: linear-gradient(to bottom right, #503294, #ff6466); }
+  #contact input {
+    border: none;
+    border-bottom: solid 1px #25007E;
+    background: transparent;
+    font-size: 14px; }
+  #contact iframe {
+    width: 50vw;
+    height: 30vh; }

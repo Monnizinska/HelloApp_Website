@@ -1,0 +1,33 @@
+@import 'zmienne';
+
+#team{
+    .team-member{
+        text-transform: uppercase;
+        border: solid 3px $blue;
+        margin-left: 1%;
+        width: 50vw;
+        display: block;
+        @media screen and(min-width: 768px) {
+            width: 32%;
+        }
+        
+        .photo{
+            background-color: $gray;
+            border-radius: 100%;
+        }
+        i{
+            margin-left: 0.5vw;
+        }
+        .fab{
+            background: $gradient;
+        }
+        .team-icon{
+            color: white;
+            border-radius: 50px;
+            height: 32px;
+            width: 32px;
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+}
