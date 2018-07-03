@@ -1,6 +1,7 @@
 header {
   color: white;
-  background: linear-gradient(to bottom right, #25007E, #FA0003); }
+  background: linear-gradient(to bottom right, #25007E, #FA0003);
+  margin-top: -125px; }
   header .button {
     border: solid 1px white;
     text-align: center;
